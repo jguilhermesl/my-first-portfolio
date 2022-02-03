@@ -145,6 +145,9 @@ header {
     color: black;
 }
 
+#fa-github-header {
+    margin-right: 10px;
+}
 @keyframes moveBanner {
     0%{ 
         transform: translateY(10rem) rotateY(.30deg);
@@ -295,6 +298,7 @@ header {
 
 .conhecimento-header i{
     font-size: 2.5rem;
+    margin-top: rem;
 }
 
 .conhecimento-header h3 {
@@ -417,6 +421,7 @@ header {
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+    cursor: pointer;
 }
 
 .card:hover #card-desenvolvendo {
@@ -611,14 +616,12 @@ footer {
     .conhecimento:nth-child(2) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        padding-top: 30px;
     
     }
     
     .conhecimento:nth-child(3) {
         grid-column: 2  / 3;
         grid-row: 3 / 4;
-        padding-top: 46px;
     }
 
     .conhecimentos-img-wrapper  {
@@ -629,19 +632,16 @@ footer {
     .conhecimento:nth-child(4) {
         grid-column: 2 / 3;
         grid-row: 4  / 5;
-        padding-top: 40px;
     }
     
     .conhecimento:nth-child(5) {
         grid-column: 2 / 3;
         grid-row: 5 / 6;
-        padding-top: 40px;
     }
     
     .conhecimento:nth-child(6) {
         grid-column: 2 / 3;
         grid-row: 6 / 7;
-        padding-top: 20px;
     }
 
 
