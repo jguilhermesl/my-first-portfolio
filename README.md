@@ -19,8 +19,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Estilização com CSS.
 - [x] Troca de classes com JavaScript para o menu Hamburguer.
 - [x] Responsividade
-- [ ] 3º projeto da seção Projetos
-- [ ] Margem entre os card na seção Conhecimentos
+- [x] 3º projeto da seção Projetos
+- [x] Margem entre os card na seção Conhecimentos
 
 ## 🤝 Colaborador
 
