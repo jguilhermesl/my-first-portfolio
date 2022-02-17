@@ -353,7 +353,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: .5rem;
-    opacity: .8;
+    opacity: .6;
     transition: opacity .3s;
 }
 
@@ -630,7 +630,7 @@ span {
     background: #343434;
     border-radius: 8px;
     border: none;
-    width: 500px;
+    width: 450px;
     height: 46px;
     font-size: 1rem;
     padding-left: 1rem;
@@ -798,7 +798,7 @@ footer {
     }
 
     .card-img-wrapper img {
-        opacity: 0.2;
+        opacity: 0.9;
     }
 
     .card-info {
@@ -952,11 +952,11 @@ footer {
 
 @media only screen and (min-width:1000px) and (max-width: 1300px) {
     .contato-left {
-        width: 60%;
+        width: 50%;
     }
 
     .contato-right {
-        width: 40%;
+        width: 50%;
     }
 
     .field {
@@ -966,5 +966,11 @@ footer {
     .btn-submit {
         left: 0rem;
         width: 40%;
+    }
+}
+
+@media only screen and (min-width:881px) and (max-width: 1100px) {
+    .about-me p {
+        margin-left: 2rem;
     }
 }
