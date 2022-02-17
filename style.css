@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 body {
+    background: #161616;
 }
 
 
@@ -16,6 +17,7 @@ body {
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
     --font-terciary:  'Heebo', sans-serif;
+    --font-quaternary: 'Poppins', sans-serif;
 
 }
 
@@ -131,8 +133,8 @@ header {
     font-size: 1.2rem;
     text-transform: uppercase;
     background: #AA076B;  
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  
-    background: linear-gradient(to right, #61045F, #AA076B); 
+    background: -webkit-linear-gradient(to right, #13FF00, #0DC700);  
+    background: linear-gradient(to right, #13FF00, #0DC700); 
     border: none;
     padding: 1rem 3rem;
     letter-spacing: .1rem ;
@@ -165,7 +167,7 @@ header {
     position: fixed;
     top: 0;
     right: -20rem;
-    background-color: white;
+    background-color: #161616;
     transition: all 1.2s;
     z-index: 90;
 }
@@ -190,14 +192,14 @@ header {
 .menu-link {
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555;
+    color: #ffffff;
     transition: color 1s;
 
 
 }
 
 .menu-link:hover {
-    color: #6a3093;
+    color: #13FF00;
 }
 
 .social-media {
@@ -210,7 +212,7 @@ header {
 }
 
 .social-media i {
-    color: #555;
+    color: #fff;
     width: 2.5rem;
     height: 2.5rem;
     font-size: 2rem;
@@ -222,13 +224,13 @@ header {
 }
 
 .social-media i:hover {
-    color: #6a3093;
+    color: #13FF00;
 
 
 }
 
 .container-conhecimentos {
-    background-color: #f5f5f5;
+    background-color: #161616;
     height: 100%;
 
 }
@@ -282,11 +284,13 @@ header {
 }
 
 .section-header h1 { 
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: #4b4b4b;
-    border-bottom: solid 3px #6a3094;
+    font-family: var(--font-quaternary);
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: solid 3px #11FF00;
     margin-bottom: 1.5rem;
+    line-height: 75px;
 
 }
 
@@ -300,38 +304,44 @@ header {
 
 .conhecimento-header i{
     font-size: 2.5rem;
+    color: #11FF00;
 }
 
 .conhecimento-header h3 {
     font-family: var(--font-secundary);
     font-size: 2rem;
     padding-left: 1rem;
+    color: #fff;
 
 }
 
 .conhecimento-text {
-    font-family: var(--font-secundary);
+    font-family: var(--font-action);
+    color: #fff;
     margin-top: 1rem;
+    font-weight: 550;
+    font-size: 13px;
 }
 
 .projetos {
     padding-top: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     padding-bottom: 4rem;
     flex-wrap: wrap;
-
 }
 
 .card {
-    position: relative;
-    width: 18rem;
-    height: 25rem;
+    display: flex;
+    width: 90%;
+    height: 15rem;
     padding: 10px;
+    margin: 0 auto;
+    border-bottom: solid 1px #4b4b4b;
 }
 
 .card-img-wrapper {
-    width: 100%;
+    width: 30%;
     height: 100%;
     background-color: black;
     border-radius: .5rem;
@@ -345,10 +355,6 @@ header {
     border-radius: .5rem;
     opacity: .8;
     transition: opacity .3s;
-
-}
-.card:hover .card-img-wrapper img {
-    opacity: .5;
 }
 
 .sessao-header {
@@ -358,20 +364,20 @@ header {
 }
 
 .sessao-header h1 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: #4b4b4b;
-    border-bottom: solid 3px #6a3094;
-    margin-bottom: 1.5rem; }
+    font-family: var(--font-quaternary);
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: solid 3px #11FF00;
+    line-height: 75px;
+    margin-bottom: 1.5rem; 
+}
 
 
 .card-info {
-    position: absolute;
-    padding: 2rem;
-    bottom: 0rem;
+    width: 70%;
+    margin-left: 2rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6 );
-    opacity: 0;
-    visibility: hidden;
     transition: all .3s;
 }
 
@@ -380,36 +386,39 @@ header {
     font-family: var(--font-primary);
     font-size: 2rem;
     font-weight: 400;
+    line-height: 2.2rem;
     
 }
 
 .card-info h3 {
     font-family: var(--font-secundary);
     font-weight: bolder;
-    color: #ff4081;
-    margin-bottom: 1.5rem;
+    color: #a7a7a7;
+    margin-bottom: 1rem;
 }
 
 .card-info p {
-    font-family: var(--font-secundary);
+    font-family: var(--font-quaternary);
     color: #eee;
     font-weight: 400;
     width: 80%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
 
 }
 
 .btn {
-    background: #AA076B;  
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  
-    background: linear-gradient(to right, #61045F, #AA076B); 
+    background: #13FF00;  
+    background: -webkit-linear-gradient(to right, #13FF00, #0DC700);  
+    background: linear-gradient(to right, #13FF00, #0DC700); 
     border-radius: .5rem;
     font-family: var(--font-action);
-    color: #eee;
+    color: #202020;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4 );
     cursor: pointer;
+    font-weight: bolder;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -421,26 +430,18 @@ header {
 }
 
 .card-info button {
-
     width: 8rem;
     height: 2.5rem;
-
 }
 
 .card:hover .card-info {
-    bottom: 2rem;
-    opacity: 1;
-    visibility: visible;
     cursor: pointer;
-}
-
-.card:hover #card-desenvolvendo {
-    bottom: 7rem;
 }
 
 .sessao-sobre-mim {
     height: 80vh;
     max-width: 100vw;
+    background: #161616;
 }
 
 .sessao-header {
@@ -481,18 +482,22 @@ header {
     font-family: var(--font-terciary);
     font-style: normal;
     font-weight: bold;
-    font-size: 44px;
+    font-size: 30px;
     line-height: 60px;
-    color: #21243D;
+    color: #fff;
 }
 
+span {
+    color: #13FF00;
+}
 .about-me p {
-    font-family: var(--font-terciary);
+    font-family: var(--font-quaternary);
+    justify-content: justify;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    color: #21243D;
+    color: #fff;
     margin-top: 1rem;
 }
 
@@ -511,14 +516,20 @@ header {
 
 .about-me li {
     padding-left: 1rem;
-    color: #21243D;
+    color: #0DC700;
 }
 
 .btn-about-me {
     width: 200px;
     height: 30px;
-    background: #21243D;
+    background: #13FF00;
     margin-left: 3rem;
+    color: #161616;
+    font-weight: 900;
+}
+
+.btn-about-me i {
+    color: #202020;
 }
 
 .btn-about-me:hover {
@@ -531,39 +542,69 @@ header {
 .sessao-contato {
     width: 100%;
     height: 100%;
-    background-color: #272727;
+    background-color: #161616;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .contato-wrapper {
-    width: 60%;
+    width: 70%;
     display: flex;
     height: 30rem;
-    box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 100px;
+    margin-bottom: 2rem;
 
 }
 
 .contato-left {
-    width: 35%;
-    background: linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22, 0.9)) , url(imagens/contato.jpg);
-    background-size: cover;
+    width: 45%;
+    background: #272727;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.contato-left ul {
+    font-family: var(--font-quaternary);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 2rem;
+    top: 2rem;
+}
+
+.contato-left ul p {
+    margin-top: 1rem;
+}
+
+.contato-left i {
+    color: #13FF00;
+    padding-right: 5px;
 }
 
 .contato-right {
-    width: 65%;
-    background-color: white;
-    padding: 1rem 3rem 3rem 3rem;
+    width: 55%;
+    background-color: #202020;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .sessao-contato h1 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: #272727;
-    width: 100%;
+    font-family: var(--font-quaternary);
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    line-height: 75px;
+    margin-bottom: 1.5rem;
     text-align: center;
-    font-weight: lighter;
+    font-weight: 500;
+    margin-left: 2rem;
 }
 
 .sessao-contato form {
@@ -579,30 +620,31 @@ header {
 
 .input-group textarea {
     padding-top: 1rem ;
-    max-width: 25rem;
-    max-height: 3;
+    max-width: 500px;
+    height: 4rem;
+    font-size: 1rem;
+    padding-left: 1rem;
 }
 
 .field {
-    background: transparent;
+    background: #343434;
+    border-radius: 8px;
     border: none;
-    width: 20rem;
-    font-size: 1.5rem;
-    font-family: var(--font-secundary);
-    border-bottom: 2px dashed #636363;
-    height: 3rem;
+    width: 500px;
+    height: 46px;
+    font-size: 1rem;
+    padding-left: 1rem;
+    font-family: var(--font-quaternary);
     outline: none;
-    margin: 1rem 0;
 }
 
-.field-label {
-    position: absolute;
-    left: 0;
-    top: 2rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-family: var(--font-secundary);
+.contato-right label {
+    display: block;
+    color: #C1C1C1;
+    font-size: 18px;
+    font-family: var(--font-quaternary);
     transition: all 0.3s;
+    margin: 1rem 0rem 0rem 0rem;
 
 }
 
@@ -616,11 +658,18 @@ header {
 }
 
 .btn-submit {
-    width: 80%;
+    width: 30%;
     height: 2rem;
+    position: relative;
+    left: 10rem;
     font-size: 1.2rem;
-    text-transform: uppercase;
     margin-top: 1rem;
+    text-align: center;
+    color: #202020;
+}
+
+.btn-submit i {
+    padding-right: 5px;
 }
 
 footer {
@@ -660,9 +709,8 @@ footer {
     bottom: 3rem;
     width: 2rem;
     height: 2rem;
-    background: #AA076B;  
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  
-    background: linear-gradient(to right, #61045F, #AA076B);
+    background: -webkit-linear-gradient(to right, #13FF00, #0DC700);  
+    background: linear-gradient(to right, #13FF00, #0DC700);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -676,16 +724,8 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-
-    .contato-wrapper { 
-        width: 100%;
-    }
-
-    .card {
-        width: 17rem;
-    }
     .sessao-conhecimentos {
-        background-color: #f5f5f5;
+        background-color: #161616;
     }
     .conhecimento-header {
         margin-top: 0;
@@ -747,15 +787,70 @@ footer {
         grid-row: 6 / 7;
     }
 
+    .card {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card-img-wrapper {
+        width: 100%;
+        height: 15.5rem;
+    }
+
+    .card-img-wrapper img {
+        opacity: 0.2;
+    }
+
+    .card-info {
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .card-info p {
+        width: 100%;
+    }
+
+    #card-conversor {
+        margin-top: 1rem;
+    }
+
+    #card-accounting {
+        margin-top: 2.5rem;
+    }
+
+
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
+    .contato-wrapper {
+        width:90%;
+    }
     .contato-left {
-        display: none;
+        display:none;
+        border-radius: 0px;
+        
     }
     .contato-right {
         width: 100%;
+        border-radius: 0px;
+    }
+
+    .field {
+        width: 300px;
+    }
+
+    .btn-submit {
+        left: 0rem;
+    }
+
+    .input-group textarea {
+        width: 300px;
     }
     }
 
@@ -766,7 +861,6 @@ footer {
     footer {
         height: 10rem;
         text-align: center;
-    
     }
     
     .footer-content {
@@ -782,26 +876,6 @@ footer {
         display:grid;
         grid-column: 1 /2 ;
         grid-row: 4 / 5;
-    }
-    .card-info {
-        position: absolute;
-        padding: 2rem;
-        bottom: 0rem;
-        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6 );
-        opacity: 1;
-        visibility: visible;
-        transition: all .3s;
-    }
-
-    .card:hover .card-info {
-        bottom: 2rem;
-        opacity: 1;
-        visibility: visible;
-        cursor: pointer;
-    }
-
-    .card-img-wrapper img {
-        opacity: 0.5
     }
 
     .sobre-mim-grid {
@@ -872,5 +946,25 @@ footer {
         margin-top: 1rem;
         margin-left: 0;
         margin-bottom: 1rem;
+        color: #202020;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1300px) {
+    .contato-left {
+        width: 60%;
+    }
+
+    .contato-right {
+        width: 40%;
+    }
+
+    .field {
+        width: 300px;
+    }
+
+    .btn-submit {
+        left: 0rem;
+        width: 40%;
     }
 }

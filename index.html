@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Portfólio de João Guilherme</title>
 </head>
@@ -45,6 +49,7 @@
                     <li class="menu-item"> <a href="#home" class="menu-link">Home</a></li>
                     <li class="menu-item"> <a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"> <a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"> <a href="#sobre-mim" class="menu-link">Sobre Mim</a></li>
                     <li class="menu-item"> <a href="#contato" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
@@ -135,10 +140,10 @@
                         <div class="card-img-wrapper">
                             <img src="imagens/conversor.png" alt="Foto de Conversão">
                         </div>
-                        <div class="card-info">
+                        <div class="card-info" id="card-conversor">
                             <h2>Conversor de Medidas</h2>
                             <h3>HTML, CSS & JavaScript</h3>
-                            <p>Converta unidades de comprimento, volume, velocidade e mais! Do jeito mais simples.</p>
+                            <p>Acesse nossos conversores e converta suas unidades de comprimento, volume, velocidade e mais! Do jeito mais simples.</p>
                             <a href="https://jg-unit-converter.netlify.app/" target="_blank"> <button class="btn">Saiba
                                     Mais</button></a>
                         </div>
@@ -147,10 +152,10 @@
                         <div class="card-img-wrapper">
                             <img src="imagens/contabilidadefera.jpg" alt="Foto Contabilidade">
                         </div>
-                        <div class="card-info">
+                        <div class="card-info" id="card-accounting">
                             <h2>Empresa de Contabilidade</h2>
                             <h3>HTML, CSS & JavaScript</h3>
-                            <p>Site para serviço de Contabilidade.</p>
+                            <p>Site base para escritório de Contabilidade. </p>
                             <a href="https://jg-accounting.netlify.app/" target="_blank"><button class="btn">Saiba
                                     Mais</button></a>
                         </div>
@@ -159,10 +164,10 @@
                         <div class="card-img-wrapper">
                             <img src="imagens/matematica.jfif" alt="Foto de cálculos">
                         </div>
-                        <div class="card-info">
+                        <div class="card-info" id="card-function">
                             <h2>Calculadora de Função Quadrática</h2>
                             <h3>HTML, CSS & JavaScript</h3>
-                            <p>Calcule as raízes da função do segundo grau.</p>
+                            <p>Insira os coeficientes da função do 2º grau e descubra as raízes do jeito mais rápido e fácil possível.</p>
                             <a href="https://function2-calculator.netlify.app/" target="_blank"><button
                                     class="btn">Saiba Mais</button></a>
                         </div>
@@ -170,74 +175,99 @@
                 </div>
         </div>
         </section>
-        <div class="sessao-sobre-mim">
+        <div class="sessao-sobre-mim" id="sobre-mim">
             <div class="sessao-header">
-                <h1>Sobre Mim</h1>
+                <h1>ABOUT ME</h1>
             </div>
             <div class="sobre-mim-grid">
                 <div class="img-box-jg">
                     <img src="./imagens/gui-foto.jpeg.png" id="img-jg" alt="Imagem de João Guilherme">
                 </div>
                 <div class="about-me">
-                    <h2>Olá, eu sou João Guilherme, Web Developer</h2>
-                    <p>Sou um jovem apaixonado por tecnologia, que está sempre em busca de mais conhecimento para aprimorar as skills e entregar sempre o melhor
-                        possível.</p>
+                    <h2>Hi, I'm <span>João Guilherme</span></h2>
+                    <p> I'm <span>18</span> years old and I live in Recife-PE, <span>Web Developer & Front End
+                            Designer</span>. I'm a young man passionate about technology, who is always looking for more
+                        knowledge, stepping out of my comfort zone, to
+                        improve my skills and always deliver the best
+                        possible. I prototyped and developed <span>Landing Pages, Sites, E-commerces, E-mails Marketing,
+                            Apps</span> and <span>Programs</span>.</p>
                     <ul>
                         <li><i class="fab fa-html5"></i></li>
                         <li><i class="fab fa-css3-alt"></i></li>
                         <li><i class="fab fa-js-square"></i></li>
                         <li><i class="fab fa-figma"></i></li>
                         <li><i class="fab fa-github"></i></li>
-                        <button type="button" class="btn btn-about-me" id="btn-pc">Abrir currículo</button>
+                        <button type="button" class="btn btn-about-me" id="btn-pc"><i class="fas fa-download"></i> CV Download</button>
                     </ul>
-                    <button type="button" class="btn btn-about-me" id="btn-cel">Abrir currículo</button>
+                    <button type="button" class="btn btn-about-me" id="btn-cel"><i class="fas fa-download"></i> CV Download</button>
                 </div>
             </div>
 
         </div>
         <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
-                <div class="contato-left"></div>
+                <div class="contato-left">
+                    <h1>CONTACT</h1>
+                    <ul>
+                        <p><i class="fas fa-mobile"></i>+55 81 991693706</p>
+                        <p><i class="fas fa-envelope"></i>@joaoguilherme_pe@hotmail.com</p>
+                        <p><i class="fas fa-map"></i>Recife, Brazil</p>
+                    </ul>
+                </div>
                 <div class="contato-right">
-                    <h1>Contato</h1>
                     <form action="https://formsubmit.co/jguilhermesl2004@gmail.com" method="POST">
                         <div class="input-group">
-                            <input type="text" name="name" class="field" id="nome" placeholder="NOME" required>
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" class="field" id="nome" placeholder="João Guilherme"
+                                required>
                         </div>
                         <div class="input-group">
-                            <input type="email" name="email" class="field" id="email" placeholder="EMAIL" required>
+                            <label for="name">Your email</label>
+                            <input type="email" name="email" class="field" id="email" placeholder="youremail@email.com"
+                                required>
                         </div>
                         <div class="input-group">
-                            <textarea name="message" class="field" id="mensagem" placeholder="MENSAGEM"></textarea>
+                            <label for="name">Your number</label>
+                            <input type="text" name="number" class="field" id="number" placeholder="+DD DD DDDDD-DDDD"
+                                required>
+                        </div>
+                        <div class="input-group">
+                            <label for="name">Message</label>
+                            <textarea name="message" class="field" id="mensagem"
+                                placeholder="Deixe uma mensagem."></textarea>
                         </div>
                         <input type="hidden" name="_captcha" value="false">
-                        <button type="submit" class="btn btn-submit">Enviar</button>
+                        <button type="submit" class="btn btn-submit"><i class="fas fa-envelope-open"></i>Send</button>
                     </form>
 
                 </div>
+
+
             </div>
-        </section>
-        <footer>
-            <div class="footer-content">
-                <p>
-                    Copyright &copy; 2021, JGSL - Todos os direitos reservados
-                </p>
-                <div class="social-list">
-                    <ul>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/jguilhermesl/"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-souza-lima-802b46218/"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2021, JGSL - Todos os direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/jguilhermesl/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-souza-lima-802b46218/"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
             </div>
-        </footer>
-        <a href="#home" id="link-topo">
-            <i class="fas fa-arrow-up"></i>
-        </a>
+        </div>
+    </footer>
+    <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     </div>
 
 
 </body>
 <script src="script.js"></script>
+
 </html>
