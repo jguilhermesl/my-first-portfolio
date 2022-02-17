@@ -14,7 +14,7 @@
 ### Adjustments and improvements
 
 
-The project is under development. Missing steps:
+The project has been finished.
 
 - [x] Body with HTML.
 - [x] Stylization with CSS.
@@ -23,7 +23,7 @@ The project is under development. Missing steps:
 - [x] 3º project of Section Projects
 - [x] Margin between card on na section Knowledges
 - [x] New color palette
-- [ ] Tradution
+- [x] Tradution
 
 ## 🤝 Collaborator
 
