@@ -1,0 +1,1 @@
+var InfoMoney=InfoMoney||{};InfoMoney.Publicity=(start=function(){"function"==typeof googleMake?googleMake():console.warn('InfoMoney.Publicity.start: Função "googleMake()" não esta disponível')},{start:start});
