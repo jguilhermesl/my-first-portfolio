@@ -11,8 +11,10 @@
 
 
 >  Portfolio for project presentation, contact form and knowledge.
-### Adjustments and improvements
+### ⚙️ Adjustments and improvements
 
+Link da aplicação: <a>http://jguilhermesl.com.br</a>
+### ⚙️ Adjustments and improvements
 
 The project has been finished.
 
@@ -40,7 +42,7 @@ The project has been finished.
   </tr>
 </table>
 
-## Technologies
+## 👨‍💻 Technologies
 Technologies used in the project:
 
 <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
