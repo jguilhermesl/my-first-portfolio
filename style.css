@@ -308,8 +308,9 @@ header {
 }
 
 .conhecimento-header h3 {
-    font-family: var(--font-secundary);
+    font-family: var(--font-quaternary);
     font-size: 2rem;
+    font-weight: 500;
     padding-left: 1rem;
     color: #fff;
 
@@ -798,7 +799,7 @@ footer {
     }
 
     .card-img-wrapper img {
-        opacity: 0.9;
+        opacity: 0.5;
     }
 
     .card-info {
@@ -809,10 +810,17 @@ footer {
         width: 90%;
         height: 100%;
         text-align: center;
+        margin-top: 10px;
     }
 
     .card-info p {
-        width: 100%;
+        width: 95%;
+        margin: 0 auto 10px auto;
+        font-size: 1rem;
+    }
+
+    .card-info h2 {
+        text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4 );
     }
 
     #card-conversor {
