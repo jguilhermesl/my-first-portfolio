@@ -338,22 +338,32 @@ header {
     justify-content: space-evenly;
 }
 
+@keyframes pulse {
+    from {
+        box-shadow: #69bcff 0 0 0;
+    }
+    to {
+        box-shadow: #69fff380 0 0 22px;
+    }
+}
+
 .card {
     width: 250px;
     height: 200px;
-    background: #26292e;
+    background-color: #26292e;
     border-radius: 10px;
-    border: 0.1px solid #3c3f44;
+    border: 0;
     font-family: var(--outfit);
     position: relative;
     transition: 0.4s;
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card:hover {
-    border: 3px solid #13ec5d;
+    box-shadow: #13ec5d 0 0 10px;
 }
+
+
 
 .card-img-wrapper {
     width: 90%;
@@ -615,10 +625,11 @@ span {
 }
 
 .field {
+    color: #C1C1C1;
     background: #343434;
     border-radius: 8px;
     border: none;
-    width: 450px;
+    width: 400px;
     height: 46px;
     font-size: 1rem;
     padding-left: 1rem;
