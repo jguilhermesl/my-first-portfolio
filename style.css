@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 body {
-    background: #212429;
+    background: #1A1A29;
 }
 
 
@@ -17,7 +17,7 @@ body {
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
     --font-terciary:  'Heebo', sans-serif;
-    --font-quaternary: 'Poppins', sans-serif;
+    --poppins: 'Poppins', sans-serif;
     --outfit: 'Outfit', sans-serif;
 
 }
@@ -26,92 +26,74 @@ html {
     scroll-behavior: smooth;
 }
 
-.hamburguer {
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    z-index: 100;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-    transition: all 1.2s;
-    
-}
-
-.line {
-    width: 100%;
-    background-color: white;
-    height: .1rem;
-    box-shadow: 0.1rem 0.1rem 1px black ;
-}
-
-
-#line1.show-menu {
-    transform: rotate(45deg) translate(.3rem, .4rem);
-
-
-
-}
-
-#line3.show-menu {
-    transform: rotate(-45deg) translate(.3rem, -.4rem);
-
-
-
-}
-
-#line2.show-menu {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.hamburguer.show-menu {
-    right: 16rem;
+.break {
+    height: 15vh;
+    width: 100vw;
+    background: #181824;
 }
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     overflow: hidden;
     position: relative;
-
-}
-.img-wrapper{
-    width: 100%; 
-    height: 100%; 
-    overflow: hidden;
-    background-color: black;
-    animation: zoom 25s;
 }
 
-.img-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
+.header {
+    font-family: var(--outfit);
+    position: fixed;
+    top: 0rem;
+    z-index: 100;
+    height: 100px;
+    display: flex;
+    background: #181824;
+    color: #fff;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30rem;
 }
 
-@keyframes zoom {
-    0%{transform: scale(1.3);
-    }
-    100%{transform: scale(1);}
+.header h1 {
+    color: #7562E0;
 
+}
+
+.header ul {
+    display: flex;
+    gap: 15px;
+}
+
+.header a {
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.header a:hover {
+    color: #7562E0;
 }
 
 .banner {
+    display: flex;
+    width: 80vw;
     position: absolute;
     top: 30%;
-    left: 15%;
+    left: 10%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.imageBanner img {
+    width: 300px;
+    height: 300px;
 }
 
 .banner h1{
     color: white;
     font-size: 3.5rem;
-    font-family: var(--font-primary);
-    font-weight: 100;
+    font-family: var(--poppins);
+    font-weight: 500;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4 );
     line-height: 3.5rem;
     animation: moveBanner 1s forwards;
@@ -119,7 +101,7 @@ header {
 
 .banner p{
     padding-top: 1rem;
-    font-family: var(--font-secundary);
+    font-family: var(--outfit);
     color: white;
     font-size: 2rem;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4 );
@@ -131,11 +113,13 @@ header {
 .banner button {
     font-family: var(--font-action);
     color: white;
+
     font-size: 1.2rem;
     text-transform: uppercase;
+    font-weight: 900;
     background: #AA076B;  
-    background: -webkit-linear-gradient(to right, #13ec5d, #4ac441);  
-    background: linear-gradient(to right, #13ec5d, #4ac441); 
+    background: -webkit-linear-gradient(to right, #7562E0, #6e5fc7);  
+    background: linear-gradient(to right, #7562E0, #6f60c7); 
     border: none;
     padding: 1rem 3rem;
     letter-spacing: .1rem ;
@@ -143,15 +127,18 @@ header {
     cursor: pointer;
     opacity: 0;
     animation: moveBanner 1.8s forwards;
+    transition: 0.5s;
 }
 
 .banner button:hover { 
-    color: black;
+    color: #7562E0;
+    background: #fff;
 }
 
 #fa-github-header {
     margin-right: 10px;
 }
+
 @keyframes moveBanner {
     0%{ 
         transform: translateY(10rem) rotateY(.30deg);
@@ -162,149 +149,93 @@ header {
     }
 }
 
-.sidebar {
-    width: 20rem;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    background-color: #161616;
-    transition: all 1.2s;
-    z-index: 90;
+.containerSkills {
+    background-color: #1A1A29;
+    height: 100%;
 }
 
-.sidebar.show-menu { 
-    right: 0rem;
-}
-
-.menu-item {
-    text-align: center;
-    margin-bottom: .3rem;
-
-
-}
-
-.menu {
-    position: absolute;
-    top: 30%;
-    left: 18%;
-}
-
-.menu-link {
-    font-family: var(--font-action);
-    font-size: 2rem;
-    color: #ffffff;
-    transition: color 1s;
-
-
-}
-
-.menu-link:hover {
-    color: #13ec5d;
-}
-
-.social-media {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.social-media i {
-    color: #fff;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 50%;
-    transition: color 1s;
-}
-
-.social-media i:hover {
-    color: #13ec5d;
-    
-    
-}
-
-.conhecimento-header {
-    display: flex;
-    align-items: center;
-    color: #4b4b4b;
+.sectionHeader {
     margin-top: 1rem;
-}
-.container-conhecimentos {
-    background-color: #212429;
-    height: 100%;
-}
-
-.section-header {
-    display: flex;
-    justify-content: center;
-}
-.conhecimentos {
-    display: flex;
-    max-width: 95vw;
-    margin: 0  auto;
-    justify-content: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.conhecimento {
-    width: 150px;
-    height: 180px;
     display: flex;
     flex-direction: column;
-    transition: 0.4s;
-    box-sizing: border-box;
-    outline: none;
-    border-radius: 1px;
-}
-
-.conhecimento-header {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #17181b;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 1px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.conhecimento:hover {
-    border-bottom: 5px solid #13ec5d;
-}
-
-.section-header h1 { 
-    font-family: var(--font-quaternary);
+.sectionHeader h1 { 
+    font-family: var(--poppins);
     font-size: 2.5rem;
     color: #fff;
-    text-transform: uppercase;
-    border-bottom: solid 3px #13ec5d;
+    border-bottom: solid 3px #7562E0;
     margin-bottom: 1rem;
 }
 
-.conhecimento-header i{
-    font-size: 2.5rem;
-    color: #13ec5d;
+.subTitle {
+    width: 60vw;
+    font-family: var(--poppins);
+    margin-bottom: 1rem;
 }
 
-.conhecimento-header h3 {
-    font-family: var(--font-quaternary);
-    font-size: 1.4rem;
-    font-weight: 500;
+.subTitle h2 {
+    font-size: 1.7rem;
+    color: #7562E0;
+}
+
+.subTitle p {
     color: #fff;
 }
 
-.projetos {
+.skills {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skill {
+    width: 280px;
+    height: 250px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill.skillPurple {
+    border: 2px solid #7562E0;
+}
+
+.skillBoxText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    font-family: var(--outfit);
+    color: #fff;
+}
+
+.skillBoxText i {
+    font-size: 2rem;
+}
+
+.skillBoxText h3 {
+    font-size: 1.3rem;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.titlePurple {
+    color: #7562E0;
+}
+
+.projects {
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -312,23 +243,7 @@ header {
     flex-wrap: wrap;
 }
 
-.sessao-header {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.sessao-header h1 {
-    font-family: var(--font-quaternary);
-    font-size: 2.5rem;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: solid 3px #13ec5d;
-    line-height: 75px;
-    margin-bottom: 1.5rem; 
-}
-
-.projetos {
+.projects {
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -340,17 +255,17 @@ header {
 
 @keyframes pulse {
     from {
-        box-shadow: #69bcff 0 0 0;
+        box-shadow: #7562E0 0 0 0;
     }
     to {
-        box-shadow: #69fff380 0 0 22px;
+        box-shadow: #7562E0 0 0 22px;
     }
 }
 
 .card {
     width: 250px;
-    height: 200px;
-    background-color: #26292e;
+    height: 290px;
+    background-color: #31313F;
     border-radius: 10px;
     border: 0;
     font-family: var(--outfit);
@@ -360,52 +275,80 @@ header {
 }
 
 .card:hover {
-    box-shadow: #13ec5d 0 0 10px;
+    box-shadow: #7562E0 0 0 10px;
 }
 
-
-
-.card-img-wrapper {
+.cardImgWrapper {
     width: 90%;
-    height: 55%;
+    height: 40%;
     margin: 10px auto 0 auto;
+    padding-top: 10px;
     border-radius: 10px;
 }
-.card-img-wrapper  img {
+
+.cardImgWrapper  img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.card-info {
+.cardInfo {
     width: 90%;
     height: 40%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-size: 0.8rem;
     margin-top: 7px;
     margin: 0 auto;
 }
 
-.card-info h2 {
-    margin-top: 4px;
+.cardInfo h2 {
+    font-family: var(--outfit);
+    margin-top: 15px;
     color: #fff;
-    font-weight: 300;
+    text-transform: uppercase;
+    color: #7562E0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cardInfo p {
+    color: #fff;
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
+
+.buttonsCard {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+}
+
+.btnCard {
+    color: #fff;
+    font-family: var(--outfit);
+    font-weight: 700;
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    border: 1px solid #7562E0;
+    cursor: pointer;
+}
+
+.btnCard.purple {
+    background: #7562E0;
 }
 
 span {
-    color: #13ec5d;
+    color: #7562E0;
 }
 
-.card-info h3 {
-    color: #13ec5d;
-    position: absolute;
-    bottom: 5px;
-    width: 230px;
-
+.spanCard {
+    font-weight: 700;
 }
 
 .btn {
@@ -422,17 +365,12 @@ span {
     font-size: 1rem;
 }
 
-.btn:hover {
+button:hover {
     opacity: 0.8;
 }
 
-.btn:active {
+button:active {
     opacity: 0.5;
-}
-
-.card-info button {
-    width: 8rem;
-    height: 2.5rem;
 }
 
 #teste {
