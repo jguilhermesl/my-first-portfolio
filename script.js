@@ -9,3 +9,13 @@ hamburguer.addEventListener("click", function(){
 }); 
 
 const qtde = document.querySelector("#qtde").value
+
+const buttonprojects = document.getElementById('divteste')
+
+function ativar(){
+    document.querySelector(".projects2").classList.toggle("show");
+
+    if(document.querySelector(".projects2").classList.contains("show")) {
+        
+    }
+}; 
