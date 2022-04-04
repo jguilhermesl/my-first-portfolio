@@ -930,7 +930,7 @@ footer {
         font-size: 3rem;
     }
     header {
-        height: 100vh;
+        height: 80vh;
     }
     .subTitle {
         width: 90vw;
@@ -960,7 +960,7 @@ footer {
 
 @media only screen and (max-width: 450px) {
     .banner {
-        top: 5%;
+        top: 0%;
     }
     .banner h1 {
         font-size: 1.8rem;
