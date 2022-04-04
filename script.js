@@ -19,3 +19,7 @@ function ativar(){
         
     }
 }; 
+
+function showNav(){
+    document.querySelector(".navResponsive").classList.toggle("showNav");
+}

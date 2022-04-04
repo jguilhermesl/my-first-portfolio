@@ -58,13 +58,14 @@ header {
     background: #181824;
     color: #fff;
     width: 100vw;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 30rem;
+    gap: 30%;
 }
 
 .header h1 {
     color: #7562E0;
+    flex-wrap:nowrap;
 
 }
 
@@ -82,6 +83,73 @@ header {
 .header a:hover {
     color: #7562E0;
 }
+
+.menuHamburguer {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    right: 3rem;
+}
+
+.menuHamburguer i {
+    position: fixed;
+    font-size: 2rem;
+    color: #fff;
+    top: 2.3rem;
+    right: 2rem;
+    display: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menuHamburguer i:hover {
+    color: #7562E0
+}
+
+.menuHamburguer li {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navResponsive i {
+    position: relative;
+    top: 0;
+    right: 10px;
+    font-size: 1rem;
+}
+
+.menuHamburguer nav {
+    font-family: var(--outfit);
+    font-weight: 600;
+
+    display: flex;
+    position: fixed;
+    top: 100px;
+    right: 0rem;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+
+    background: #181824;
+    padding-bottom: 1rem;
+    padding-left: 35px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.menuHamburguer nav.showNav {
+    opacity: 1;
+}
+.menuHamburguer nav a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menuHamburguer nav a:hover {
+    color: #7562E0;
+}
+
 
 .banner {
     display: flex;
@@ -104,7 +172,6 @@ header {
     font-family: var(--poppins);
     font-weight: 500;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4 );
-    line-height: 3.5rem;
     animation: moveBanner 1s forwards;
 }
 
@@ -126,7 +193,6 @@ header {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 900;
-    background: #AA076B;  
     background: -webkit-linear-gradient(to right, #7562E0, #6e5fc7);  
     background: linear-gradient(to right, #7562E0, #6f60c7); 
     border: none;
@@ -389,7 +455,7 @@ span {
     border: 1px solid #fff;
     cursor: pointer;
     background: #7562E0;
-    z-index: 1000;
+    z-index: 99;
 }
 
 
@@ -455,6 +521,7 @@ span {
     line-height: 23px;
     color: #fff;
     margin: 1rem 0;
+    position: relative;
 }
 
 .name-about-me {
@@ -475,8 +542,12 @@ span {
 }
 
 .aboutMe li {
-    padding-left: 1rem;
+    padding-left: 10px;
     color: #7562E0;
+}
+
+.aboutMe li i {
+    font-size: 2rem;
 }
 
 .btn-about-me {
@@ -491,6 +562,7 @@ span {
     color: #fff;
     font-family: var(--outfit);
     cursor: pointer;
+    z-index: 10000;
 }
 
 .btn-about-me i {
@@ -680,12 +752,20 @@ footer {
     visibility: hidden;
 }
 
+.sectionHeader.contact {
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 1000px) {
     .contato-wrapper {
         width:90%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
     }
     .contato-left {
-        display:none;
         border-radius: 0px;
         
     }
@@ -705,10 +785,62 @@ footer {
     .input-group textarea {
         width: 300px;
     }
+
+    .header {
+        gap: 20%;
     }
 
+    .aboutMeFlex {
+        gap: 0;
+    }
 
+    .aboutMe {
+        margin-top: 0rem;
+    }
+}
 
+@media only screen and (max-width: 1000px) {
+        .aboutMeFlex {
+            flex-direction: column;
+            height: 100%;
+        justify-content: center;
+    }
+
+    .imgBoxMe {
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    
+    .aboutMe {
+        margin: 0 auto;
+        margin-top: 0rem;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMe ul {
+        margin-left: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .btn-about-me {
+        margin-left: 0rem;
+    }
+    
+    .aboutMe ul div {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width:881px) and (max-width: 1100px) {
+    .about-me p {
+        margin-left: 2rem;
+    }
+}
 
 @media only screen and (max-width: 880px) {
     footer {
@@ -730,75 +862,83 @@ footer {
         grid-column: 1 /2 ;
         grid-row: 4 / 5;
     }
+    .sectionHeader h1 { 
+        font-size: 2rem;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
-    .aboutMeFlex {
+@media only screen and (max-width: 840px) {
+    .header ul {
+        display: none;
+    }
+
+    .header {
+        justify-content: left;
+        padding-left: 20px;
+    }
+
+    .menuHamburguer {
+        display: flex;
+    }
+
+    .menuHamburguer i {
+        display: flex;
+    }
+
+    .banner {
+        top: 10%;
         flex-direction: column;
         height: 100%;
-        justify-content: center;
-    }
-
-    .imgBoxMe {
-        width: 300px;
-        height: 250px;
-        margin: 0 auto;
-    }
-
-    .aboutMe {
-        margin: 0 auto;
-        margin-top: 0rem;
-        width: 90%;
+        gap: 1rem;
         justify-content: center;
         align-items: center;
     }
 
-    .aboutMe ul {
-        margin-left: 0;
-        justify-content: center;
-        flex-direction: column;
+    .banner h1 {
+        font-size: 3rem;
     }
-
-    .btn-about-me {
-        margin-left: 0rem;
+    header {
+        height: 100vh;
     }
+    .subTitle {
+        width: 90vw;
+    }
+}
 
-    .aboutMe ul div {
+@media only screen and (max-width: 600px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .banner p {
+        font-size: 1.3rem;
+    }
+    .banner button {
+        width: 250px;
+        height: 40px;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .sectionHeader.contact {
         display: flex;
-        flex-direction: row;
-    }
-
-
-}
-
-@media only screen and (min-width:1000px) and (max-width: 1300px) {
-    .contato-left {
-        width: 50%;
-    }
-
-    .contato-right {
-        width: 50%;
-    }
-
-    .field {
-        width: 300px;
-    }
-
-    .btn-submit {
-        left: 0rem;
-        width: 40%;
-    }
-
-}
-
-@media only screen and (min-width:881px) and (max-width: 1100px) {
-    .about-me p {
-        margin-left: 2rem;
     }
 }
 
-@media only screen and (max-width: 370px) {
-    .conhecimento {
-        width: 130px;
+@media only screen and (max-width: 450px) {
+    .banner {
+        top: 20%;
+    }
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+    .textBanner {
+        width: 95vw;
+    }
+    .imageBanner img {
+        width: 280px;
+        height: 300px;
+    }
+
+    .header {
+        justify-content: left!important;
     }
 }
