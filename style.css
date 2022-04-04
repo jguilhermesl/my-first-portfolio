@@ -945,7 +945,7 @@ footer {
         font-size: 1.3rem;
     }
     .banner button {
-        width: 250px;
+        width: 280px;
         height: 40px;
         font-size: 1rem;
         padding: 10px 20px;
@@ -960,7 +960,7 @@ footer {
 
 @media only screen and (max-width: 450px) {
     .banner {
-        top: 20%;
+        top: 5%;
     }
     .banner h1 {
         font-size: 1.8rem;
