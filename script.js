@@ -16,7 +16,7 @@ function ativar(){
     document.querySelector(".projects2").classList.toggle("show");
 
     if(document.querySelector(".projects2").classList.contains("show")) {
-        
+        buttonprojects.innerText = Oi
     }
 }; 
 

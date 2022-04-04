@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,200;0,400;1,100;1,200;1,300;1,400;1,500&family=Mulish:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+button {
+    cursor: pointer;
+}
+
 button:hover {
     opacity: 0.8;
 }
@@ -161,9 +165,19 @@ header {
     align-items:center;
 }
 
+@keyframes move {
+    from {
+        transform: translateY(10px)
+    }
+    to {
+        transform: translateY(-10px)
+    }
+}
+
 .imageBanner img {
     width: 300px;
     height: 300px;
+    animation: move 1s infinite alternate;
 }
 
 .banner h1{
@@ -392,6 +406,7 @@ header {
     flex-direction: column;
     margin-top: 7px;
     margin: 0 auto;
+    position: relative;
 }
 
 .cardInfo h2 {
@@ -415,6 +430,8 @@ header {
     display: flex;
     gap: 10px;
     justify-content: center; 
+    position: absolute;
+    bottom: -35px;
 }
 
 .btnCard {
@@ -443,7 +460,6 @@ span {
 }
 
 .btnShowProjects {
-    margin: 0 auto 1rem auto;
     color: #fff;
     font-family: var(--outfit);
     font-weight: 700;
@@ -456,6 +472,7 @@ span {
     cursor: pointer;
     background: #7562E0;
     z-index: 99;
+    margin: 0 auto 1rem auto!important;
 }
 
 
@@ -621,6 +638,10 @@ span {
     color: #7562E0;
 }
 
+.contato-left ul i:hover {
+    color: #fff;
+}
+
 .sessao-contato form {
     width: 100%;
     display: flex;
@@ -734,9 +755,9 @@ footer {
 }
 
 #link-topo {
-    position: fixed;
-    right: 1rem;
-    bottom: 3rem;
+    position: relative;
+    left: 90vw;
+    bottom: 1rem;
     width: 2rem;
     height: 2rem;
     background-color: #7562E0;
@@ -754,6 +775,17 @@ footer {
 
 .sectionHeader.contact {
     display: none;
+}
+
+.iconWhatsApp {
+    position: fixed;
+    bottom: 2rem;
+    left: 3rem;
+}
+
+.iconWhatsApp i {
+    font-size: 3rem;
+    color: #25D366;
 }
 
 
@@ -920,6 +952,9 @@ footer {
     }
     .sectionHeader.contact {
         display: flex;
+    }
+    #link-topo {
+        left: 80vw;
     }
 }
 
