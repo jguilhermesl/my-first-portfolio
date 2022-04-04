@@ -159,8 +159,8 @@ header {
     display: flex;
     width: 80vw;
     position: absolute;
-    top: 30%;
     left: 10%;
+    margin-top: 100px;
     justify-content: space-between;
     align-items:center;
 }
@@ -601,6 +601,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10rem;
 }
 
 .contato-wrapper {
@@ -918,7 +919,7 @@ footer {
     }
 
     .banner {
-        top: 10%;
+        margin-top: 50px;
         flex-direction: column;
         height: 100%;
         gap: 1rem;
@@ -930,7 +931,7 @@ footer {
         font-size: 3rem;
     }
     header {
-        height: 76vh;
+        height: 90vh;
     }
     .subTitle {
         width: 90vw;
@@ -959,9 +960,6 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
-    .banner {
-        top: 8%;
-    }
     .banner h1 {
         font-size: 1.8rem;
     }

@@ -10,14 +10,20 @@ hamburguer.addEventListener("click", function(){
 
 const qtde = document.querySelector("#qtde").value
 
-const buttonprojects = document.getElementById('divteste')
+
+
 
 function ativar(){
+    var btnProjects = document.getElementById('btnShowProjects')
     document.querySelector(".projects2").classList.toggle("show");
 
-    if(document.querySelector(".projects2").classList.contains("show")) {
-        buttonprojects.innerText = Oi
+     if(document.querySelector(".projects2").classList.contains("show")) {
+         btnProjects.innerHTML = "Ver menos"
+    } else {
+        btnProjects.innerHTML = "Ver mais"
     }
+
+
 }; 
 
 function showNav(){
