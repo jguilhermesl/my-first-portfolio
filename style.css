@@ -960,7 +960,7 @@ footer {
 
 @media only screen and (max-width: 450px) {
     .banner {
-        top: 3%;
+        top: 5%;
     }
     .banner h1 {
         font-size: 1.8rem;
