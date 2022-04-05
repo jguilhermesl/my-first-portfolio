@@ -2,11 +2,11 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-<video src="./imagens/video.mp4" alt="Video for show the portfolio."></video>
+<img src="./imagens/foto-portfolio.png" alt="foto portfolio" />
 
 
->  Portfolio for project presentation, contact form and knowledge.
-### ⚙️ Adjustments and improvements
+>  Hello! This is my portfolio. Here you will find every informations about me.
+### ⚙️ Link
 
 Link da aplicação: <a>http://jguilhermesl.com.br</a>
 ### ⚙️ Adjustments and improvements
@@ -17,10 +17,9 @@ The project has been finished.
 - [x] Stylization with CSS.
 - [x] Class switching with JavaScript for the Hamburger menu
 - [x] Responsiveness
-- [x] 3º project of Section Projects
-- [x] Margin between card on na section Knowledges
-- [x] New color palette
-- [x] Tradution
+- [x] Sections home, about me, skills, projects and contact 
+- [x] New design
+- [x] Form activation
 
 ## 🤝 Collaborator
 

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
 
     <title>Portfólio de João Guilherme</title>
 </head>
@@ -36,11 +37,11 @@
                     <a href="#skills">
                         <li>SKILLS</li>
                     </a>
-                    <a href="#aboutme">
-                        <li>ABOUT ME</li>
-                    </a>
                     <a href="#projects">
                         <li>PROJECTS</li>
+                    </a>
+                    <a href="#aboutme">
+                        <li>ABOUT ME</li>
                     </a>
                     <a href="#contact">
                         <li>CONTACT</li>
@@ -57,24 +58,24 @@
                         <a href="#skills">
                             <li><i class='bx bxs-star'></i> SKILLS</li>
                         </a>
-                        <a href="#aboutme">
-                            <li><i class='bx bxs-user'></i> ABOUT ME</li>
-                        </a>
                         <a href="#projects">
-                            <li><i class='bx bxs-folder-open'></i> PROJECTS</li>
+                            <li><i class='bx bxs-folder-open'></i> PROJETOS</li>
+                        </a>
+                        <a href="#aboutme">
+                            <li><i class='bx bxs-user'></i> SOBRE MIM</li>
                         </a>
                         <a href="#contact">
-                            <li><i class='bx bxs-phone'></i> CONTACT</li>
+                            <li><i class='bx bxs-phone'></i> CONTATO</li>
                         </a>
                     </ul>
                 </nav>
             </div>
             <div class="banner">
                 <div class="textBanner">
-                    <h1>Front End Developer</h1>
-                    <p>João Guilherme</p>
+                    <h1 id="titleTyping">Front End Developer</h1>
+                    <p id="textTyping">João Guilherme</p>
                     <a href="https://github.com/jguilhermesl" target="_blank"><button><i class="fab fa-github"
-                                id="fa-github-header"></i>SEE REPOSITORIES</button></a>
+                                id="fa-github-header"></i>VER REPOSITÓRIOS</button></a>
                 </div>
                 <div class="imageBanner">
                     <img src="./imagens/fotoHome.svg" />
@@ -92,8 +93,8 @@
                     <h1>Skills</h1>
                     <div class="subTitle">
                         <h2>Featured skills:</h2>
-                        <p>These are the main skills and technologies that help my performance in the daily programming
-                            and web development.</p>
+                        <p>Essas são as principais habilidades e tecnologias que auxiliam no meu desempenho na programação diária
+                            e desenvolvimento web.</p>
                     </div>
                 </div>
                 <div class="skills">
@@ -104,50 +105,50 @@
                                 <i class="fab fa-css3"></i>
                             </div>
                             <h3>Web Development</h3>
-                            <p>I create beautiful interfaces with simple HTML5, CSS3 and also frameworks e libs like
-                                Bootstrap and BoxIcons.</p>
+                            <p>Eu crio lindas interfaces com HTML5 simples, CSS3, também frameworks e libs como
+                                Bootstrap e BoxIcons.</p>
                         </div>
                     </div>
                     <div class="skill skillWhite">
                         <div class="skillBoxText">
                             <i class="fab fa-js"></i>
                             <h3 class="titlePurple">JavaScript</h3>
-                            <p>With the universal and most used programming language in the world, JavaScript brings my projects to life.</p>
+                            <p>Com a linguagem de programação universal e mais usada no mundo, JavaScript dá vida aos meus projetos.</p>
                         </div>
                     </div>
                     <div class="skill skillPurple">
                         <div class="skillBoxText">
                             <i class="fab fa-react"></i>
                             <h3>ReactJS</h3>
-                            <p>With this JavaScript library I improve my interfaces and make them faster, scalable and simple.</p>
+                            <p>Com esta biblioteca JavaScript eu melhoro minhas interfaces e as torno mais rápidas, escaláveis ​​e simples.</p>
                         </div>
                     </div>
                     <div class="skill skillWhite">
                         <div class="skillBoxText">
                             <i class="fab fa-github"></i>
                             <h3 class="titlePurple">Git e GitHub</h3>
-                            <p>With GitHub & Git I can host my code, make changes and version my code, being able to 'go back in time' or interact with other contributors.</p>
+                            <p>Com GitHub & Git posso hospedar meu código, fazer alterações e versionar meu código, podendo 'voltar no tempo' ou interagir com outros contribuidores.</p>
                         </div>
                     </div>
                     <div class="skill skillPurple">
                         <div class="skillBoxText">
                             <i class="fab fa-node"></i>
                             <h3>NodeJS</h3>
-                            <p>With its high scalability, node can create requests in single thread. In addition to having NPM, the largest repository in the world.</p>
+                            <p>Com sua alta escalabilidade, o nó pode criar solicitações em um único thread. Além de contar com o NPM, o maior repositório do mundo.</p>
                         </div>
                     </div>
                     <div class="skill skillWhite">
                         <div class="skillBoxText">
                             <i class='bx bxl-firebase'></i>
                             <h3 class="titlePurple">Firebase</h3>
-                            <p>Firebase is a Google service, where I can authenticate and have access to the database.</p>
+                            <p>Firebase é um serviço do Google, onde posso autenticar e ter acesso ao banco de dados.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <section class="sectionProjects" id="projects">
                 <div class="sectionHeader">
-                    <h1>Projects</h1>
+                    <h1>Projetos</h1>
                     <div class="subTitle">
                         <h2>Featured projects:</h2>
                         <p>Esses são meus principais projetos, você pode conferir todos meus repositórios e projetos no
@@ -163,8 +164,8 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>App Filmaria</h2>
-                                <p>Movies catalog app madewith  <span class="spanCard">HTML, CSS,
-                                        JavaScript, React</span> and others technologies.</p>
+                                <p>App de catálogo de filmes, feito com  <span class="spanCard">HTML, CSS,
+                                        JavaScript, React</span> e outras tecnlogias.</p>
                                 <div class="buttonsCard">
                                     <a href="https://jgsl-filmaria.netlify.app/" target="_blank"><button class="btnCard purple">View
                                             Live</button></a>
@@ -179,7 +180,7 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>Mini Online Shirt Store</h2>
-                                <p>Mini virtual shirt store, produced with <span class="spanCard">HTML, CSS &
+                                <p>Mini loja de camisas virtual, desenvolvida com <span class="spanCard">HTML, CSS &
                                         JavaScript</span>.</p>
                                 <div class="buttonsCard">
                                     <a href="https://shirtscatalog.netlify.app/" target="_blank"><button class="btnCard purple">View
@@ -195,8 +196,8 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>System Calling</h2>
-                                <p>Project with a system of tickets and customers, madewith <span class="spanCard">React, JS
-</span> and others technologies.</p>
+                                <p>Projeto de sistema de chamadas e clientes, feito com <span class="spanCard">React, JS
+</span> e outras tecnologias.</p>
                                 <div class="buttonsCard">
                                     <a href="http://jgsl-systemcalling.netlify.app/" target="_blank"><button class="btnCard purple">View
                                             Live</button></a>
@@ -211,7 +212,7 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>RocketBlog</h2>
-                                <p>Interface blog, produced with <span class="spanCard">HTML & CSS</span>.</p>
+                                <p>Interface de um blog, feito com <span class="spanCard">HTML & CSS</span>.</p>
                                 <div class="buttonsCard">
                                     <a href="http://jgsl-rocketblog.netlify.app/" target="_blank"><button class="btnCard purple">View
                                             Live</button></a>
@@ -228,7 +229,7 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>PricingTable - Rocket</h2>
-                                <p>Interface with a company's services <span class="spanCard">HTML, CSS &
+                                <p>Interface com preços de serviços, feito com <span class="spanCard">HTML, CSS &
                                         JavaScript</span>.</p>
                                 <div class="buttonsCard">
                                     <a href="https://jgsl-rocketprice.netlify.app/" target="_blank"><button class="btnCard purple">View
@@ -244,7 +245,7 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>Unit Converter</h2>
-                                <p>Unit converter design produced with <span class="spanCard">HTML, CSS &
+                                <p>Conversor de unidades, produzido com <span class="spanCard">HTML, CSS &
                                         JavaScript</span>.</p>
                                 <div class="buttonsCard">
                                     <a href="https://jg-unit-converter.netlify.app/" target="_blank"><button class="btnCard purple">View
@@ -259,8 +260,8 @@
                                 <img src="imagens/matematica.jfif" alt="Foto ilustrando loja virtual">
                             </div>
                             <div class="cardInfo">
-                                <h2>FUNCTION CALCULATOr</h2>
-                                <p>Quadratic function calculator, produced with <span class="spanCard">HTML, CSS &
+                                <h2>Function Calculator</h2>
+                                <p>Calculadora de função quadrática, produzida com <span class="spanCard">HTML, CSS &
                                         JavaScript</span>.</p>
                                 <div class="buttonsCard">
                                     <a href="https://function2-calculator.netlify.app/" target="_blank"><button class="btnCard purple">View
@@ -276,7 +277,7 @@
                             </div>
                             <div class="cardInfo">
                                 <h2>em desenvolvimento...</h2>
-                                <p>Landing page for technical assistance, madewith <span class="spanCard">NextJS</span>.</p>
+                                <p>Landing page para assistência técnica, feito com <span class="spanCard">NextJS</span>.</p>
                                 <div class="buttonsCard">
                                     <a href="https://shirtscatalog.netlify.app/" target="_blank"><button class="btnCard purple">View
                                             Live</button></a>
@@ -291,21 +292,19 @@
             </section>
             <div class="sessao-sobre-mim" id="aboutme">
                 <div class="sectionHeader">
-                    <h1>About me</h1>
+                    <h1>Sobre mim</h1>
                 </div>
                 <div class="aboutMeFlex">
                     <div class="imgBoxMe">
                         <img src="./imagens/gui-foto.jpeg.png" alt="Imagem de João Guilherme">
                     </div>
                     <div class="aboutMe">
-                        <h2>Hi, I'm <span>João Guilherme</span></h2>
-                        <p> I'm <span>18</span> years old and I live in Recife-PE, <span>Web Developer & Front End
-                                Designer</span>. I'm a young man passionate about technology, who is always looking for
-                            more
-                            knowledge, stepping out of my comfort zone, to
-                            improve my skills and always deliver the best
-                            possible. I prototyped and developed <span>Landing Pages, Sites, E-commerces, E-mails
-                                Marketing,
+                        <h2>Olá, me chamo <span>João Guilherme</span></h2>
+                        <p> Eu tenho <span>18</span> anos e moro em Recife, PE, atualmente atuo como <span>Desenvolvedor Front End</span>. Sou um jovem apaixonado por tecnologia, que está sempre em busca de
+                            mais
+                            conhecimento, saindo da minha zona de conforto, para
+                            aprimorar minhas habilidades e entregar sempre o melhor
+                            possível. Eu prototipei e desenvolvi <span>Landing Pages, Sites, E-commerces, 
                                 Apps</span> and <span>Programs</span>.</p>
                         <ul>
                             <div>
@@ -327,11 +326,11 @@
             <section class="sessao-contato" id="contact">
                 <div class="contato-wrapper">
                     <div class="sectionHeader contact">
-                        <h1>Contact</h1>
+                        <h1>Contato</h1>
                     </div>
                     <div class="contato-left">
-                        <h1>Connect with me:</h1>
-                        <p>Satisfied with my work? Please contact me. </p>
+                        <h1>Se conecte comigo:</h1>
+                        <p>Satisfeito com meu trabalho? Por favor, me contate.</p>
                         <ul class="socialMedias">
                             <li class="socialMediaIcon"><a href="https://www.instagram.com/jgsldev/"> <i class='bx bxl-instagram-alt'></i> </a> </li>
                             <li class="socialMediaIcon"><a href="https://www.linkedin.com/in/jguilhermesl/"> <i class='bx bxl-linkedin-square'></i> </a> </li>
@@ -339,22 +338,21 @@
                             <li class="socialMediaIcon"><a href="https://github.com/jguilhermesl"> <i class='bx bxl-github'></i> </a> </li>
                         </ul>
                         <ul>
-                            <p><i class="fas fa-map"></i> Recife, Brazil</p>
+                            <p><i class="fas fa-map"></i> Recife, Brasil</p>
                         </ul>
                     </div>
                     <div class="contato-right">
                         <form action="https://formsubmit.co/joaoguilherme_pe@hotmail.com" method="POST">
-                            <input type="hidden" name="_next" value="http://jguilhermesl.com.br">
                             <div class="input-group">
-                                <input type="text" name="name" class="field" id="nome" placeholder="Your name" required>
+                                <input type="text" name="name" class="field" id="nome" placeholder="Seu nome" required>
                                 <input type="email" name="email" class="field" id="email"
-                                    placeholder="youremail@email.com" required>
-                                <input type="text" name="number" class="field" id="number" placeholder="Your email"
+                                    placeholder="Seu email" required>
+                                <input type="number" name="number" class="field" id="number" placeholder="Seu número"
                                     required>
 
                                 <textarea name="message" class="field" id="mensagem"
-                                    placeholder="Your message."></textarea>
-                                <button type="submit" class="btn btn-submit">Send</button>
+                                    placeholder="Deixe uma mensagem."></textarea>
+                                <button type="submit" class="btn btn-submit" onclick="activateForm()">Enviar</button>
                             </div>
                             <input type="hidden" name="_captcha" value="false">
                         </form>
@@ -376,7 +374,7 @@
         <footer>
             <div class="footer-content">
                 <p>
-                    Copyright &copy; 2021, JGSL - Todos os direitos reservados
+                    Copyright &copy; 2022, JGSL - Todos os direitos reservados
                 </p>
                 <div class="social-list">
                     <ul>
