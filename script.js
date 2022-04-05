@@ -18,6 +18,7 @@ function showNav(){
 
 const textTyping = document.getElementById('textTyping');
 const titleTyping = document.getElementById('titleTyping')
+const titleHeader = document.getElementById('titleHeader')
 
 function typeWriter(elemento){
     const textoArray = elemento.innerHTML.split('');

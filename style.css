@@ -70,6 +70,7 @@ header {
 .header h1 {
     color: #7562E0;
     flex-wrap:nowrap;
+    position: relative;
 
 }
 
