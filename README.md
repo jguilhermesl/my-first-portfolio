@@ -27,7 +27,7 @@ The project has been finished.
   <tr>
     <td align="center">
       <a href="#">
-        <img src="./imagens/gui.jpg" width="100px;" alt="Photo of João Guilherme in GitHub"/><br>
+        <img src="./imagens/gui-foto.jpg" width="100px;" alt="Photo do João Guilherme"/><br>
         <sub>
           <b>João Guilherme</b>
         </sub>
