@@ -27,7 +27,7 @@ The project has been finished.
   <tr>
     <td align="center">
       <a href="#">
-        <img src="./imagens/gui-foto.jpg" width="100px;" alt="Photo do João Guilherme"/><br>
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEEieIa-_h22g/profile-displayphoto-shrink_800_800/0/1651164045663?e=1664409600&v=beta&t=FiU4rWxSApKj3qONdLb7QfXG4u0GSikPDMIluU1wG_I" width="100px;" alt="Photo do João Guilherme"/><br>
         <sub>
           <b>João Guilherme</b>
         </sub>

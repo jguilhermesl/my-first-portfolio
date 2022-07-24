@@ -1,10 +1,9 @@
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 
 ScrollReveal({ 
     distance: '50px',
     duration: 2000,
     origin: 'top' });
-
 
 sr.reveal(".banner", {delay: 200})
 sr.reveal(".sectionHeader", {delay: 200})
